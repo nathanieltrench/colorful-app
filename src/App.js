@@ -25,7 +25,10 @@ const App = () => {
 
   window.Appcues.identify(userId, { // feel free to add in any user properties here
     role: "tester",
-    signupDate: currentTime
+    signupDate: currentTime,
+    company: "WED Company",
+    firstName: "Walter",
+    lastName: "Elias"
   })
 
   window.Appcues.on("all", function(name, payload) {
