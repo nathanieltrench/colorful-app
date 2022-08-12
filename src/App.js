@@ -6,7 +6,6 @@ import AppcuesRouter from "./Appcues";
 /*
 The AppcuesRouter contains the Appcues.page call, as well as all the app's page
 changes. It needs to be additionally wrapped in BrowserRouter to function properly.
-
 This is also where the Appcues.identify call is made, as well as any event listeners
 like Appcues.on so that they will be called every time the page loads.
 */
@@ -28,7 +27,8 @@ const App = () => {
     signupDate: currentTime,
     company: "WED Company",
     firstName: "Walter",
-    lastName: "Elias"
+    lastName: "Elias",
+    newField: "Test",
   })
 
   window.Appcues.on("all", function(name, payload) {
@@ -39,7 +39,7 @@ const App = () => {
   })
 
   window.Appcues.loadLaunchpad("#launchpad", { // loads Launchpad on this element
-    position: "right"
+    position: "top-right"
   })
   
   return ( 
