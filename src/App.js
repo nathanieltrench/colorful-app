@@ -40,7 +40,7 @@ const App = () => {
   })
 
   window.Appcues.loadLaunchpad("#launchpad", { // loads Launchpad on this element
-    position: "top-right"
+    position: "bottom-right"
   })
   
   return ( 
