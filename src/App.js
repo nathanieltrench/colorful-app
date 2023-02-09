@@ -29,6 +29,7 @@ const App = () => {
     firstName: "Walter",
     lastName: "Elias",
     newField: "Test",
+    pagePath: "about",
   })
 
   window.Appcues.on("all", function(name, payload) {
